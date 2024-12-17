@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Mamanima Foods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #4a2c2a; /* Dark brown text */
+        }
+
+        header {
+            background-color: #d84315; /* Orange */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #d84315;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #4a2c2a; /* Dark brown */
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d84315; /* Orange */
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            background-color: #d84315;
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 4px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #bf360c; /* Darker orange */
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .footer a {
+            color: #d84315;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sign Up - Mamanima Foods</h1>
+</header>
+
+<div class="container">
+    <h2>Create an Account</h2>
+    <form action="signup.php" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" name="location" required><br>
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Sign Up</button>
+
+        </div>
+        
+    </form>
+</div>
+
+<div class="footer">
+    <p>Already have an account? <a href="home.php">Log In</a></p>
+</div>
+
+</body>
+</html>
